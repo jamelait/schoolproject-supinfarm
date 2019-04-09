@@ -97,9 +97,12 @@ Pour faciliter l'utilisation du canvas, nous avons utilisé le moteur de jeu Iso
 ### Communication Client/Serveur
 Le jeu utilise le module pour nodejs socket.io. Ce module permet d'envoyer des informations au serveur et d'en recevoir grâce à un système d'évènements.
 
+### Database
+![](./doc/bdd.png)
+
 ### Ressources
-https://empiresandallies.fandom.com/wiki/Tomato
-https://empiresandallies.fandom.com/wiki/Wheat
-https://empiresandallies.fandom.com/wiki/Corn
-https://farmville2.fandom.com/wiki/Tomato
-https://farmville2.fandom.com/wiki/Wheat
+- https://empiresandallies.fandom.com/wiki/Tomato
+- https://empiresandallies.fandom.com/wiki/Wheat
+- https://empiresandallies.fandom.com/wiki/Corn
+- https://farmville2.fandom.com/wiki/Tomato
+- https://farmville2.fandom.com/wiki/Wheat
