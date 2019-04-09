@@ -1,0 +1,14 @@
+{
+  "mongodb" : {
+    "use" : "local",
+    "mongohq" : {
+      "connectionString" : "mongodb://mangodbuser:supinfo1434@linus.mongohq.com:10008/mongodb"
+    },
+    "local" : {
+      "connectionString" : "mongodb://localhost:27017/farmwars"
+    }
+  },
+  "server" : {
+    "ip" : "192.168.11.166"
+  }
+}

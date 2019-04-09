@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="main.css" />
+
+        <title>Login</title>
+    </head>
+
+    <body>
+        <div id="bloc_page">
+            <header>
+                <div id="titre_principal">
+                   <!--  <img src="pelle.jpg" alt="Pelle" id="logo" /> -->
+                    <h1>SupinFarm</h1>
+                    <h2>Jeux en ligne multijoueur</h2>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="/">Accueil</a></li>
+                        <li><a href="/play">Jouer</a></li>
+                        <li><a href="/register">Créer un compte</a></li>
+                        <li><a href="/administration_game">administration</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div id="banniere_image">
+                <div id="banniere_description">
+                    SupinFarm
+                    <a href="#" class="bouton_rouge"><img src="images/flecheblanchedroite.png" alt="" /></a>
+                </div>
+            </div>
+            
+                    <h1>Login</h1>
+					
+					<form method="post">
+  
+						<fieldset>
+							<legend>Connexion</legend>
+ 
+                            <p><span class="error"><%= message %></span></p>
+
+							<p><label for="mail">E-mail : </label>
+							<input type="text" name="mail" /></p>
+							
+
+							<p><label for="password">Mot de passe : </label>
+							<input type="password" name="password" /></p>
+
+														
+							<p><input type="submit" value="Envoyer" /></p>
+ 
+						</fieldset>    
+						
+					</form>
+              
+            <footer>
+
+            </footer>
+        </div>
+    </body>
+</html>

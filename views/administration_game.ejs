@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Administration</title>
+    </head>
+
+    <body>
+            <div id="bloc_page">
+                <header>
+                    <div id="titre_principal">
+                        <h1>SupinFarm</h1>
+                        <h2>Jeux en ligne multijoueur</h2>
+                    </div>
+
+                    <nav>
+                        <ul>
+                            <li><a href="/">Accueil</a></li>
+                            <li><a href="/play">Jouer</a></li>
+                            <li><a href="/register">Créer un compte</a></li>
+                            <li><a href="/administration_game">administration</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <div id="banniere_image">
+                    <div id="banniere_description">
+                        SupinFarm
+                        <a href="#" class="bouton_rouge"><img src="images/flecheblanchedroite.png" alt="" /></a>
+                </div>
+            </div>
+
+            <h1>Inscription</h1>
+					
+                    <form method="post">
+
+                            <fieldset>
+                                    <legend>Valeur du jeu</legend> <!-- Titre du fieldset -->
+
+                                    <p><label for="start_money">Monnaie de départ (niveau Facile): </label>
+                                    <input type="number" name="start_money" value="<% if(constant!=null){ %><%= constant.start_money %><% } %>"/></p>
+
+                                    <p><label for="tile_radius">Nombre de cases séparant les joueurs: </label>
+                                    <input type="number" name="tile_radius" value="<% if(constant!=null){ %><%= constant.tile_radius %><% } %>"/></p>
+
+                                    <p><label for="market_price">Prix marché: </label>
+                                    <input type="number" name="market_price" value="<% if(constant!=null){ %><%= constant.market_price %><% } %>"/></p>
+
+                                    <p><label for="default_weapon">Arme de départ: </label>
+                                        <select name="default_weapon">
+                                            <option value="AK47" <% if(constant!=null){ %><% if(constant.default_weapon=="AK47"){ %>selected<% }%><% } %>>AK47</option>
+                                            <option value="M4"<% if(constant!=null){ %><% if(constant.default_weapon=="M4"){ %>selected<% }%><% } %>>M4</option>
+                                            <option value="Fourchette" <% if(constant!=null){ %><% if(constant.default_weapon=="Fourchette"){ %>selected<% }%><% } %> >Fourchette</option> 
+                                        </select>
+                                    </p>
+
+                                    <p><label for="regeneration_speed">Vitesse de régeneration du fermier: </label>
+                                    <input type="number" name="regeneration_speed" value="<% if(constant!=null){ %><%= constant.regeneration_speed%><% } %>"/>s</p> 
+                                    
+                                    <p><label for="grace_time">Temps pendant lequel le fermier ne peut être attaqué: </label>
+                                    <input type="number" name="grace_time" value="<% if(constant!=null){ %><%= constant.grace_time%><% } %>" />s</p>
+
+                                    <p><label for="crop_maturation">Temps de poussé des graines en plantes: </label>
+                                    <input type="number" name="crop_maturation" value="<% if(constant!=null){ %><%= constant.crop_maturation%><% } %>" />s</p>
+
+                                    <p><label for="crop_productivity">Temps de production: </label>
+                                    <input type="number" name="crop_productivity" value="<% if(constant!=null){ %><%= constant.crop_productivity%><% } %>" />s</p>
+
+                                    <p><label for="crop_decay">Temps de conservation après la poussé: </label>
+                                    <input type="number" name="crop_decay" value="<% if(constant!=null){ %><%= constant.crop_decay%><% } %>" />s</p>
+
+                                    <p><label for="tomate_price">Prix des graines de tomates: </label>
+                                    <input type="number" name="tomate_price" value="<% if(constant!=null){ %><%= constant.tomate_price%><% } %>" />s</p>
+
+                                    <p><label for="mais_price">Prix des graines de mais: </label>
+                                    <input type="number" name="mais_price" value="<% if(constant!=null){ %><%= constant.mais_price%><% } %>" />s</p>
+
+                                    <p><label for="ble_price">Prix des graines de bles: </label>
+                                    <input type="number" name="ble_price" value="<% if(constant!=null){ %><%= constant.ble_price%><% } %>" />s</p>
+
+                                    <p><input type="submit" value="Envoyer" /></p>
+
+                            </fieldset>    
+
+                    </form>
+
+            <footer>
+
+           </footer>
+
+
+    </body>
+</html>
